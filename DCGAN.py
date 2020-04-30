@@ -21,9 +21,6 @@ config.gpu_options.allow_growth=True
 sess = tf.Session(config=config)
 K.set_session(sess)
 
-def wasserstein_loss(y_true, y_pred):
-    return K.mean(y_true*y_pred)
-
 class DCGAN():
     def __init__(self):
         
